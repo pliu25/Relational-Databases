@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS actors;
-DROP TABLE IF EXISTS director;
-DROP TABLE IF EXISTS movie_actors;
+DROP TABLE IF EXISTS directors;
+DROP TABLE IF EXISTS movie_actors; --need this bc wont create table if already exists (prev created)
 
 CREATE TABLE directors (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
