@@ -10,7 +10,8 @@ GROUP BY(directors.id); --creates new buckets for distinct id's
 having count
 SELECT directors.name
 FROM directors INNER JOIN movies 
-HAVING COUNT(directors_id)
-GROUP BY(directors.id);
+ON directors.id=movies.director_id
+GROUP BY(directors.id)
+HAVING COUNT(directors_id);
 --Total number of actors in each movie
 --Total number of movies for each actor
