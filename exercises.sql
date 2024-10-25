@@ -12,6 +12,6 @@ SELECT directors.name
 FROM directors INNER JOIN movies 
 ON directors.id=movies.director_id
 GROUP BY(directors.id)
-HAVING COUNT(directors_id);
+HAVING COUNT(*) > 1;
 --Total number of actors in each movie
 --Total number of movies for each actor
